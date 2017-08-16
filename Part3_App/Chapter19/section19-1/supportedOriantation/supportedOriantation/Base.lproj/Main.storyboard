@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="supportedOriantation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tree-a.png" translatesAutoresizingMaskIntoConstraints="NO" id="f2u-tU-Pki">
+                                <rect key="frame" x="144" y="262.5" width="87" height="142"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDM-rM-ApT">
+                                <rect key="frame" x="265" y="592" width="69" height="30"/>
+                                <state key="normal" title="상세 페이지"/>
+                                <connections>
+                                    <segue destination="Ist-Cr-Uro" kind="showDetail" id="QE4-Jx-T4d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f2u-tU-Pki" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ioH-S7-K0H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yDM-rM-ApT" secondAttribute="trailing" constant="25" id="pwc-1G-nKB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yDM-rM-ApT" secondAttribute="bottom" constant="45" id="qOo-mf-bZD"/>
+                            <constraint firstItem="f2u-tU-Pki" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v3G-L5-ie5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143" y="93"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Iht-y6-oXJ">
+            <objects>
+                <viewController id="Ist-Cr-Uro" customClass="DetailViewController" customModule="supportedOriantation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VM4-6l-SFg"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Fk-yp-m3C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DMt-A6-s7y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNO-5d-Gw2">
+                                <rect key="frame" x="209" y="592" width="125" height="30"/>
+                                <state key="normal" title="상세 페이지를 닫는다"/>
+                                <connections>
+                                    <action selector="goBack:" destination="Ist-Cr-Uro" eventType="touchUpInside" id="Eok-0j-9B3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상세 페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdq-UQ-5S3">
+                                <rect key="frame" x="114.5" y="169" width="146.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.70877950170000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rdq-UQ-5S3" firstAttribute="centerX" secondItem="DMt-A6-s7y" secondAttribute="centerX" id="I5K-va-973"/>
+                            <constraint firstItem="rdq-UQ-5S3" firstAttribute="centerY" secondItem="DMt-A6-s7y" secondAttribute="centerY" constant="-145.5" id="NNC-QX-f8W"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lNO-5d-Gw2" secondAttribute="trailing" constant="25" id="Ula-4O-dcv"/>
+                            <constraint firstItem="1Fk-yp-m3C" firstAttribute="top" secondItem="lNO-5d-Gw2" secondAttribute="bottom" constant="45" id="kWZ-7y-wOv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Npt-h7-ypZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624" y="93"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tree-a.png" width="87" height="142"/>
+    </resources>
+</document>

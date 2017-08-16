@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SkN-g6-Yji">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--시작-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="embed_navigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQ5-ae-IMd">
+                                <rect key="frame" x="145" y="175" width="30" height="30"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFk-Dp-Is7">
+                                <rect key="frame" x="146.5" y="218.5" width="82" height="30"/>
+                                <state key="normal" title="바다를 고른다"/>
+                                <connections>
+                                    <segue destination="6Ha-Ah-Gze" kind="show" id="iPf-gq-BSK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1u-y7-YAs">
+                                <rect key="frame" x="153.5" y="374.5" width="69" height="30"/>
+                                <state key="normal" title="산을 고른다"/>
+                                <connections>
+                                    <segue destination="0ve-3z-QUk" kind="show" id="klu-7Y-0J6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PFk-Dp-Is7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="8FG-RN-Cb4"/>
+                            <constraint firstItem="EQ5-ae-IMd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-27.5" id="Pog-b5-iMS"/>
+                            <constraint firstItem="v1u-y7-YAs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="56" id="RN9-KG-3os"/>
+                            <constraint firstItem="EQ5-ae-IMd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-143.5" id="Vs5-cC-Fl8"/>
+                            <constraint firstItem="v1u-y7-YAs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="db4-yR-vnm"/>
+                            <constraint firstItem="PFk-Dp-Is7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ztz-Am-mAy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="시작" id="Xq6-tZ-vJs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="465" y="519.71830985915494"/>
+        </scene>
+        <!--바다에서 놀자-->
+        <scene sceneID="dbF-Hu-pdY">
+            <objects>
+                <viewController id="6Ha-Ah-Gze" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Yx-wY-4hw"/>
+                        <viewControllerLayoutGuide type="bottom" id="upY-UZ-hKb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s63-Rf-00X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="바다에서 놀자" id="nsJ-HK-8tW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PFj-1q-d8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1305" y="339"/>
+        </scene>
+        <!--산에서 놀자-->
+        <scene sceneID="Glj-cg-7ug">
+            <objects>
+                <viewController id="0ve-3z-QUk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a57-Vq-ckN"/>
+                        <viewControllerLayoutGuide type="bottom" id="6C7-F7-fFI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tp4-IZ-Fl1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="산에서 놀자" id="mrY-uE-uW2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBs-6o-KQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1305" y="1024"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nq5-UI-Cy4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SkN-g6-Yji" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WKf-XR-PeN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yH8-gX-b7u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8r-ru-By4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-266" y="520"/>
+        </scene>
+    </scenes>
+</document>

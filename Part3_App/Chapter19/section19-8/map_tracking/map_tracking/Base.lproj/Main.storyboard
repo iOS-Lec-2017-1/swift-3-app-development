@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="map_tracking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFD-RG-p28">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem image="trackingNone" id="lVj-7g-fxN">
+                                        <connections>
+                                            <action selector="tapTrackingButton:" destination="BYZ-38-t0r" id="EUW-13-hDq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="y6o-XE-oad">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cFD-RG-p28" secondAttribute="bottom" id="70r-1C-5EZ"/>
+                            <constraint firstItem="y6o-XE-oad" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H1T-h4-6nz"/>
+                            <constraint firstItem="y6o-XE-oad" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ru9-e8-4U9"/>
+                            <constraint firstItem="cFD-RG-p28" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="W0R-F9-QK0"/>
+                            <constraint firstAttribute="trailing" secondItem="cFD-RG-p28" secondAttribute="trailing" id="b74-jj-qeZ"/>
+                            <constraint firstAttribute="trailing" secondItem="y6o-XE-oad" secondAttribute="trailing" id="cSV-Rj-Hq7"/>
+                            <constraint firstItem="cFD-RG-p28" firstAttribute="top" secondItem="y6o-XE-oad" secondAttribute="bottom" id="gOT-ty-f8y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myMap" destination="y6o-XE-oad" id="WZk-rG-mYs"/>
+                        <outlet property="trackingButton" destination="lVj-7g-fxN" id="vri-0K-hW1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.33333333333334" y="135.32608695652175"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="trackingNone" width="37" height="37"/>
+    </resources>
+</document>

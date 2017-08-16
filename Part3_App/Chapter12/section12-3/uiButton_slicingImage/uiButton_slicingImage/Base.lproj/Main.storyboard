@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="uiButton_slicingImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wto-yA-jy3">
+                                <rect key="frame" x="16" y="61" width="103" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="R7p-ib-eqh"/>
+                                    <constraint firstAttribute="width" constant="103" id="Raj-cD-HMc"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="slicingImage"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZb-po-V7b">
+                                <rect key="frame" x="242" y="60" width="152" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="rlJ-Mk-wq2"/>
+                                    <constraint firstAttribute="width" constant="152" id="uTV-2D-1mS"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="slicingImage"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2Q-R9-FHq">
+                                <rect key="frame" x="16" y="113" width="103" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="dcd-qI-7z0"/>
+                                    <constraint firstAttribute="width" constant="103" id="hmD-mx-bzK"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="slicingImage"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHw-B9-1Bl">
+                                <rect key="frame" x="119" y="113" width="123" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="DIs-IP-3R8"/>
+                                    <constraint firstAttribute="width" constant="123" id="wLc-ih-Szq"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="slicingImage"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHK-dM-ya0">
+                                <rect key="frame" x="242" y="113" width="152" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="9Kh-8a-CNi"/>
+                                    <constraint firstAttribute="height" constant="78" id="Xjp-EB-UpC"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="slicingImage"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qR6-ZM-sFD">
+                                <rect key="frame" x="119" y="60" width="123" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="aTX-3p-zpr"/>
+                                    <constraint firstAttribute="width" constant="123" id="vDV-gF-ZF4"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="slicingImage"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qR6-ZM-sFD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="0UE-oK-XHb"/>
+                            <constraint firstItem="xHw-B9-1Bl" firstAttribute="top" secondItem="qR6-ZM-sFD" secondAttribute="bottom" constant="8" id="2jC-Ty-IJh"/>
+                            <constraint firstItem="iHK-dM-ya0" firstAttribute="top" secondItem="NZb-po-V7b" secondAttribute="bottom" constant="8" id="6al-0T-QLH"/>
+                            <constraint firstItem="iHK-dM-ya0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Hne-eX-tKh"/>
+                            <constraint firstItem="iHK-dM-ya0" firstAttribute="leading" secondItem="xHw-B9-1Bl" secondAttribute="trailing" id="IU7-vg-fmf"/>
+                            <constraint firstItem="xHw-B9-1Bl" firstAttribute="leading" secondItem="A2Q-R9-FHq" secondAttribute="trailing" id="Jbu-t5-2et"/>
+                            <constraint firstItem="NZb-po-V7b" firstAttribute="leading" secondItem="qR6-ZM-sFD" secondAttribute="trailing" id="N7h-M3-3af"/>
+                            <constraint firstItem="NZb-po-V7b" firstAttribute="leading" secondItem="qR6-ZM-sFD" secondAttribute="trailing" id="W0D-5C-ape"/>
+                            <constraint firstItem="qR6-ZM-sFD" firstAttribute="leading" secondItem="wto-yA-jy3" secondAttribute="trailing" id="WQf-ac-h11"/>
+                            <constraint firstItem="wto-yA-jy3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="epc-x2-9Sz"/>
+                            <constraint firstItem="wto-yA-jy3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="fil-E3-VKW"/>
+                            <constraint firstItem="NZb-po-V7b" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iw0-WG-FsH"/>
+                            <constraint firstItem="NZb-po-V7b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="ohL-Py-WtN"/>
+                            <constraint firstItem="qR6-ZM-sFD" firstAttribute="leading" secondItem="wto-yA-jy3" secondAttribute="trailing" id="ptx-Mv-NIO"/>
+                            <constraint firstItem="A2Q-R9-FHq" firstAttribute="top" secondItem="wto-yA-jy3" secondAttribute="bottom" constant="8" id="qpv-Ob-x3y"/>
+                            <constraint firstItem="A2Q-R9-FHq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="rjU-uW-7nn"/>
+                            <constraint firstItem="iHK-dM-ya0" firstAttribute="leading" secondItem="xHw-B9-1Bl" secondAttribute="trailing" id="w9h-1R-HCw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="95.380434782608702"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="slicingImage" width="65" height="49"/>
+    </resources>
+</document>
